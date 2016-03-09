@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <HorizontalScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content">
+
+            <!-- header logos -->
+            <ImageView
+                android:id="@+id/iv_logo_schedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="logo"
+                android:src="@mipmap/butterchurners_logo" />
+
+            <ImageView
+                android:id="@+id/iv_title_schedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_logo_schedule"
+                android:contentDescription="Schedule"
+                android:src="@mipmap/schedule_title" />
+
+
+            <!-- next game -->
+
+            <ImageView
+                android:id="@+id/iv_title_schedule_nextgame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo_schedule"
+                android:contentDescription="Next Game"
+                android:src="@mipmap/nextgame_title" />
+
+            <!-- vis VS home -->
+
+            <TextView
+                android:id="@+id/tv_visteam_schedule_nextgame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_title_schedule_nextgame"
+                android:paddingTop="10dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_VS_schedule_nextgame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_below="@id/iv_title_schedule_nextgame"
+                android:layout_toRightOf="@id/tv_visteam_schedule_nextgame"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/tv_hometeam_schedule_nextgame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_below="@id/iv_title_schedule_nextgame"
+                android:layout_toRightOf="@id/tv_VS_schedule_nextgame"
+                android:textColor="#000000"/>
+
+            <!-- date time and arena -->
+
+            <TextView
+                android:id="@+id/tv_date_schedule_nextgame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_VS_schedule_nextgame"
+                android:layout_below="@id/tv_hometeam_schedule_nextgame"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/tv_time_schedule_nextgame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_VS_schedule_nextgame"
+                android:layout_below="@id/tv_date_schedule_nextgame"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/tv_arena_schedule_nextgame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_VS_schedule_nextgame"
+                android:layout_below="@id/tv_time_schedule_nextgame"
+                android:textColor="#000000"/>
+
+            <!-- end of next game -->
+
+            <!-- start of upcoming games -->
+
+            <ImageView
+                android:id="@+id/iv_title_schedule_upcoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_arena_schedule_nextgame"
+                android:contentDescription="Upcoming Games"
+                android:src="@mipmap/upcoming_title" />
+
+            <TextView
+                android:id="@+id/tv_date_schedule_upcoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_title_schedule_upcoming"
+                android:paddingTop="10dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_visteam_schedule_upcoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_title_schedule_upcoming"
+                android:layout_toRightOf="@id/tv_date_schedule_upcoming"
+                android:paddingTop="10dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_VS_schedule_upcoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_title_schedule_upcoming"
+                android:layout_toRightOf="@id/tv_visteam_schedule_upcoming"
+                android:paddingTop="10dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_hometeam_schedule_upcoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_title_schedule_upcoming"
+                android:layout_toRightOf="@id/tv_VS_schedule_upcoming"
+                android:paddingTop="10dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_time_schedule_upcoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_title_schedule_upcoming"
+                android:layout_toRightOf="@id/tv_hometeam_schedule_upcoming"
+                android:paddingTop="10dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_arena_schedule_upcoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_title_schedule_upcoming"
+                android:layout_toRightOf="@id/tv_time_schedule_upcoming"
+                android:paddingTop="10dp"
+                android:textColor="#000000" />
+
+            <!-- end of upcoming games -->
+
+            <!-- start of previous games -->
+
+            <ImageView
+                android:id="@+id/iv_title_schedule_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_arena_schedule_upcoming"
+                android:contentDescription="Previous Games"
+                android:src="@mipmap/previous_title" />
+
+            <TextView
+                android:id="@+id/tv_date_schedule_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_title_schedule_previous"
+                android:paddingTop="10dp"
+                android:maxLines="40"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_visteam_schedule_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_title_schedule_previous"
+                android:layout_toRightOf="@id/tv_date_schedule_previous"
+                android:paddingTop="10dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_visscore_schedule_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_title_schedule_previous"
+                android:layout_toRightOf="@id/tv_visteam_schedule_previous"
+                android:paddingTop="10dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_VS_schedule_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_title_schedule_previous"
+                android:layout_toRightOf="@id/tv_visscore_schedule_previous"
+                android:paddingTop="10dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_hometeam_schedule_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_title_schedule_previous"
+                android:layout_toRightOf="@id/tv_VS_schedule_previous"
+                android:paddingTop="10dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_homescore_schedule_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_title_schedule_previous"
+                android:layout_toRightOf="@id/tv_hometeam_schedule_previous"
+                android:paddingTop="10dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_final_schedule_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_title_schedule_previous"
+                android:layout_toRightOf="@id/tv_homescore_schedule_previous"
+                android:paddingTop="10dp"
+                android:textColor="#000000" />
+
+            <!-- end of previous games -->
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+</ScrollView>

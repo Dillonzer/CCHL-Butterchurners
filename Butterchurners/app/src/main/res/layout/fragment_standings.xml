@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <HorizontalScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content">
+
+            <!-- header logos -->
+            <ImageView
+                android:id="@+id/iv_logo_standings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="logo"
+                android:src="@mipmap/butterchurners_logo" />
+
+            <ImageView
+                android:id="@+id/iv_title_standings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_logo_standings"
+                android:paddingTop="-25dp"
+                android:contentDescription="standings"
+                android:src="@mipmap/standings_title" />
+
+            <!-- start of standings titles -->
+
+            <TextView
+                android:id="@+id/tv_rank_standings_title"
+                android:text="Rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo_standings"
+                android:paddingTop="10dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_team_standings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_rank_standings_title"
+                android:layout_toRightOf="@id/tv_rank_standings_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_team_standings_title"
+                android:text="Team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo_standings"
+                android:layout_toRightOf="@id/tv_rank_standings_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_gp_standings_title"
+                android:text="GP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo_standings"
+                android:layout_toRightOf="@id/tv_team_standings"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_w_standings_title"
+                android:text="W"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo_standings"
+                android:layout_toRightOf="@id/tv_gp_standings_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_l_standings_title"
+                android:text="L"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo_standings"
+                android:layout_toRightOf="@id/tv_w_standings_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_t_standings_title"
+                android:text="T"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo_standings"
+                android:layout_toRightOf="@id/tv_l_standings_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_otl_standings_title"
+                android:text="OTL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo_standings"
+                android:layout_toRightOf="@id/tv_t_standings_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_pts_standings_title"
+                android:text="PTS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo_standings"
+                android:layout_toRightOf="@id/tv_otl_standings_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_wpct_standings_title"
+                android:text="Win %"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo_standings"
+                android:layout_toRightOf="@id/tv_pts_standings_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_gf_standings_title"
+                android:text="GF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo_standings"
+                android:layout_toRightOf="@id/tv_wpct_standings_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_ga_standings_title"
+                android:text="GA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo_standings"
+                android:layout_toRightOf="@id/tv_gf_standings_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_gpct_standings_title"
+                android:text="Goal %"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo_standings"
+                android:layout_toRightOf="@id/tv_ga_standings_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_pims_standings_title"
+                android:text="PIMS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo_standings"
+                android:layout_toRightOf="@id/tv_gpct_standings_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_record_standings_title"
+                android:text="Record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo_standings"
+                android:layout_toRightOf="@id/tv_pims_standings_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_strk_standings_title"
+                android:text="Streak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo_standings"
+                android:layout_toRightOf="@id/tv_record_standings_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_lastfive_standings_title"
+                android:text="Last 5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo_standings"
+                android:layout_toRightOf="@id/tv_strk_standings_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+
+            <!-- end of titles -->
+
+            <!-- start of data -->
+            <TextView
+                android:id="@+id/tv_rank_standings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_rank_standings_title"
+                android:paddingTop="10dp"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/tv_gp_standings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_rank_standings_title"
+                android:layout_toRightOf="@id/tv_team_standings"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/tv_w_standings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_rank_standings_title"
+                android:layout_toRightOf="@id/tv_gp_standings_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_l_standings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_rank_standings_title"
+                android:layout_toRightOf="@id/tv_w_standings_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/tv_t_standings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_rank_standings_title"
+                android:layout_toRightOf="@id/tv_l_standings_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_otl_standings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_rank_standings_title"
+                android:layout_toRightOf="@id/tv_t_standings_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_pts_standings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_rank_standings_title"
+                android:layout_toRightOf="@id/tv_otl_standings_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_wpct_standings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_rank_standings_title"
+                android:layout_toRightOf="@id/tv_pts_standings_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_gf_standings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_rank_standings_title"
+                android:layout_toRightOf="@id/tv_wpct_standings_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_ga_standings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_rank_standings_title"
+                android:layout_toRightOf="@id/tv_gf_standings_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_gpct_standings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_rank_standings_title"
+                android:layout_toRightOf="@id/tv_ga_standings_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_pims_standings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_rank_standings_title"
+                android:layout_toRightOf="@id/tv_gpct_standings_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_record_standings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_rank_standings_title"
+                android:layout_toRightOf="@id/tv_pims_standings_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_strk_standings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_rank_standings_title"
+                android:layout_toRightOf="@id/tv_record_standings_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_lastfive_standings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_rank_standings_title"
+                android:layout_toRightOf="@id/tv_strk_standings_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="25dp"
+                android:textColor="#000000" />
+
+
+            <!-- end of data -->
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+</ScrollView>

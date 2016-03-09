@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <HorizontalScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content">
+
+
+            <!-- header logos -->
+            <ImageView
+                android:id="@+id/iv_logo_roster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="logo"
+                android:src="@mipmap/butterchurners_logo" />
+
+            <ImageView
+                android:id="@+id/iv_title_roster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_logo_roster"
+                android:paddingTop="-15dp"
+                android:contentDescription="Roster"
+                android:src="@mipmap/roster_title" />
+
+            <!-- roster titles start -->
+            <TextView
+                android:id="@+id/tv_number_roster_title"
+                android:text="Number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo_roster"
+                android:paddingTop="10dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_name_roster_title"
+                android:text="Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo_roster"
+                android:layout_toRightOf="@id/tv_number_roster_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_name_roster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name_roster_title"
+                android:layout_toRightOf="@id/tv_number_roster_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_gp_roster_title"
+                android:text="GP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo_roster"
+                android:layout_toRightOf="@id/tv_name_roster"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_g_roster_title"
+                android:text="Goals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo_roster"
+                android:layout_toRightOf="@id/tv_gp_roster_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_a_roster_title"
+                android:text="Assists"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo_roster"
+                android:layout_toRightOf="@id/tv_g_roster_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_pts_roster_title"
+                android:text="Points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo_roster"
+                android:layout_toRightOf="@id/tv_a_roster_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_pims_roster_title"
+                android:text="PIMS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo_roster"
+                android:layout_toRightOf="@id/tv_pts_roster_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_ppg_roster_title"
+                android:text="PPG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo_roster"
+                android:layout_toRightOf="@id/tv_pims_roster_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_shg_roster_title"
+                android:text="SHG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo_roster"
+                android:layout_toRightOf="@id/tv_ppg_roster_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_ptpg_roster_title"
+                android:text="PTS/G"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo_roster"
+                android:layout_toRightOf="@id/tv_shg_roster_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_pimpg_roster_title"
+                android:text="PIM/G"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_logo_roster"
+                android:layout_toRightOf="@id/tv_ptpg_roster_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:textColor="#000000" />
+
+            <!-- roster titles end -->
+
+            <!-- roster data start -->
+            <TextView
+                android:id="@+id/tv_number_roster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_number_roster_title"
+                android:paddingTop="10dp"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/tv_gp_roster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_gp_roster_title"
+                android:layout_toRightOf="@id/tv_name_roster"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_g_roster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_g_roster_title"
+                android:layout_toRightOf="@id/tv_gp_roster_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_a_roster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_a_roster_title"
+                android:layout_toRightOf="@id/tv_g_roster_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_pts_roster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_pts_roster_title"
+                android:layout_toRightOf="@id/tv_a_roster_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_pims_roster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_pims_roster_title"
+                android:layout_toRightOf="@id/tv_pts_roster_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_ppg_roster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_ppg_roster_title"
+                android:layout_toRightOf="@id/tv_pims_roster_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_shg_roster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_shg_roster_title"
+                android:layout_toRightOf="@id/tv_ppg_roster_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_ptpg_roster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_ptpg_roster_title"
+                android:layout_toRightOf="@id/tv_shg_roster_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_pimpg_roster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_pimpg_roster_title"
+                android:layout_toRightOf="@id/tv_ptpg_roster_title"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:textColor="#000000" />
+
+            <!-- roster end -->
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+</ScrollView>
