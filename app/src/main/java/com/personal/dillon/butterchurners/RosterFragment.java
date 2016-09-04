@@ -40,7 +40,7 @@ public class RosterFragment extends Fragment {
 
 
     private class JsoupRun extends AsyncTask<Void, Void, Void> {
-        String url = "http://stats.adultrechockey.ca/c-regina/ashnregina/en/stats/statdisplay.php?type=skaters&season_id=70&team_id=3642&division_id=-1";
+        String url = "http://stats.adultrechockey.ca/c-regina/ashnregina/en/stats/statdisplay.php?type=skaters&team_id=3642&season_id=76&league_id=6&division_id=-1&confId=0";
         Elements centerAlign;
         Elements leftAlign;
 

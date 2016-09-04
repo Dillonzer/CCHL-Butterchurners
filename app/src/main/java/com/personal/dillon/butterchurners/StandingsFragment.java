@@ -43,7 +43,7 @@ public class StandingsFragment extends Fragment {
 
 
     private class JsoupRun extends AsyncTask<Void, Void, Void> {
-        String url = "http://stats.adultrechockey.ca/c-regina/ashnregina/en/stats/statdisplay.php?type=standings&subType=8&season_id=70&tournament_id=0&leagueId=6&division_id=185&confId=0&team_id=3642";
+        String url = "http://stats.adultrechockey.ca/c-regina/ashnregina/en/stats/statdisplay.php?type=standings&subType=9&season_id=76&tournament_id=0&leagueId=6&division_id=-1&confId=0&team_id=3642";
         Elements leftAlign;
         Elements centerAlign;
 

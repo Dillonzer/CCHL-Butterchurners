@@ -40,7 +40,7 @@ public class SchedFragment extends Fragment {
 
 
     private class JsoupRun extends AsyncTask<Void, Void, Void> {
-        String url = "http://stats.adultrechockey.ca/c-regina/ashnregina/en/stats/schedule.php?view=season&team_id=3642&division_id=-1&season_id=70";
+        String url = "http://stats.adultrechockey.ca/c-regina/ashnregina/en/stats/schedule.php?view=season&team_id=3642&season_id=76&home_away=&division_id=-1";
         Elements el_game_dates;
         Elements el_visiting_scores;
         Elements el_visiting_teams;
@@ -184,13 +184,13 @@ public class SchedFragment extends Fragment {
             {
                 if (game_counter < next_game_index) //previous
                 {
-                    s_previous_visteam += vt.text() + "\n";
+                    s_previous_visteam +=  "| " +  vt.text() + "\n";
                 } else if (game_counter == next_game_index) //next game
                 {
                     s_nextgame_visteam = vt.text();
                 } else //upcoming
                 {
-                    s_upcoming_visteam += vt.text() + "\n";
+                    s_upcoming_visteam +=  "| " +  vt.text() + "\n";
                 }
 
                 game_counter++;
@@ -232,13 +232,13 @@ public class SchedFragment extends Fragment {
             {
                 if (game_counter < next_game_index) //previous
                 {
-                    s_previous_final += vos.text() + "\n";
+                    s_previous_final +=  "| " +  vos.text() + "\n";
                 } else if (game_counter == next_game_index) //next game
                 {
                     s_nextgame_time = vos.text();
                 } else //upcoming
                 {
-                    s_upcoming_time += vos.text() + "\n";
+                    s_upcoming_time += "@ " + vos.text() + "\n";
                 }
 
                 game_counter++;
@@ -250,7 +250,7 @@ public class SchedFragment extends Fragment {
             {
                 if (game_counter > next_game_index)  //upcoming
                 {
-                    s_upcoming_arena += a.text() + "\n";
+                    s_upcoming_arena += "| Rink: " + a.text() + "\n";
                 } else if (game_counter == next_game_index) //next game
                 {
                     s_nextgame_arena = a.text();

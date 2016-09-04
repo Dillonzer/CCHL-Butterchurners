@@ -76,7 +76,6 @@
                 android:id="@+id/tv_date_schedule_nextgame"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/tv_VS_schedule_nextgame"
                 android:layout_below="@id/tv_hometeam_schedule_nextgame"
                 android:textColor="#000000"/>
 
@@ -84,7 +83,6 @@
                 android:id="@+id/tv_time_schedule_nextgame"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/tv_VS_schedule_nextgame"
                 android:layout_below="@id/tv_date_schedule_nextgame"
                 android:textColor="#000000"/>
 
@@ -92,7 +90,6 @@
                 android:id="@+id/tv_arena_schedule_nextgame"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/tv_VS_schedule_nextgame"
                 android:layout_below="@id/tv_time_schedule_nextgame"
                 android:textColor="#000000"/>
 
@@ -117,11 +114,20 @@
                 android:textColor="#000000" />
 
             <TextView
-                android:id="@+id/tv_visteam_schedule_upcoming"
+                android:id="@+id/tv_time_schedule_upcoming"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/iv_title_schedule_upcoming"
                 android:layout_toRightOf="@id/tv_date_schedule_upcoming"
+                android:paddingTop="10dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_visteam_schedule_upcoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_title_schedule_upcoming"
+                android:layout_toRightOf="@id/tv_time_schedule_upcoming"
                 android:paddingTop="10dp"
                 android:textColor="#000000" />
 
@@ -143,21 +149,14 @@
                 android:paddingTop="10dp"
                 android:textColor="#000000" />
 
-            <TextView
-                android:id="@+id/tv_time_schedule_upcoming"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/iv_title_schedule_upcoming"
-                android:layout_toRightOf="@id/tv_hometeam_schedule_upcoming"
-                android:paddingTop="10dp"
-                android:textColor="#000000" />
+
 
             <TextView
                 android:id="@+id/tv_arena_schedule_upcoming"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/iv_title_schedule_upcoming"
-                android:layout_toRightOf="@id/tv_time_schedule_upcoming"
+                android:layout_toRightOf="@id/tv_hometeam_schedule_upcoming"
                 android:paddingTop="10dp"
                 android:textColor="#000000" />
 

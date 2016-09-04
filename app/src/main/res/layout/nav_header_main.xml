@@ -29,6 +29,6 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Winter 15-16 Season" />
+        android:text="Winter 16-17 Season" />
 
 </LinearLayout>
